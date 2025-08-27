@@ -37,7 +37,7 @@ jobs:
       - name: Build debug apk
         uses: gradle/gradle-build-action@v3
         with:
-          arguments: assembleDebug --stacktrace --debug
+          arguments: assembleDebug --scan --info
           distributions-cache-enabled: true
           dependencies-cache-enabled: true
           configuration-cache-enabled: true
